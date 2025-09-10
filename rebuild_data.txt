@@ -1,0 +1,93 @@
+// 从vocabulary.js提取的前10个词汇的干净数据
+const tempVocabularyData = [
+  {
+    id: 1,
+    chinese: "包子",
+    english: "Bun",
+    twi: "Bɔbɔ",
+    culturalContent: "包子在中国文化中象征着家庭和团圆，是传统的街头小吃之一，尤其在节庆时被家庭制作，象征着幸福和温暖。Bun在英语中指的是一种小型发酵面包，作为食品普遍存在，但没有中国文化中关于家庭和团圆的象征意义。Bɔbɔ在Twi中指的是类似的食品，但文化背景上不具备与中国文化中的团圆意义相同的象征。",
+    category: "冲突",
+    level: "一级"
+  },
+  {
+    id: 2,
+    chinese: "北京",
+    english: "Beijing",
+    twi: "Kɔtɔkɔ",
+    culturalContent: "北京是中国的首都，象征着政治、文化和历史的中心。它是中国历史和现代化的交汇点，具有深厚的文化积淀。Beijing在英语中同样指代中国的首都，但在英语文化中较少体现其象征意义。Kɔtɔkɔ在Twi中是指北京，文化上强调其作为中国的首都地位，但缺少中国文化中的深层次象征。",
+    category: "空缺",
+    level: "一级"
+  },
+  {
+    id: 3,
+    chinese: "茶",
+    english: "Tea",
+    twi: "Nsa",
+    culturalContent: "茶是中国传统文化的核心之一，象征着平和、理性和传统。茶文化在中国有着几千年的历史，茶道是修身养性的一部分。Tea在英语中指的是一种饮品，虽然在西方也有饮茶的传统，但缺少中国文化中的哲学和社会象征。Nsa在Twi中指茶，文化上强调日常饮品，较少与哲学或修养相关联。",
+    category: "冲突",
+    level: "一级"
+  },
+  {
+    id: 4,
+    chinese: "弟弟",
+    english: "Younger brother",
+    twi: "Akɔkɔ",
+    culturalContent: "弟弟在中国文化中象征着家庭中的亲密关系和责任。传统上，哥哥和弟弟之间有着严格的长幼秩序，弟弟常被视为家庭的小成员。Younger brother在英语中通常指家庭中的年龄较小的男性成员，文化上更侧重于家庭成员关系，而缺乏中国文化中的长幼尊卑意义。Akɔkɔ在Twi中是弟弟的意思，文化上类似于中文，但没有强调中国文化中的长幼秩序。",
+    category: "冲突",
+    level: "一级"
+  },
+  {
+    id: 5,
+    chinese: "饭",
+    english: "Rice/Meal",
+    twi: "Aduane",
+    culturalContent: "饭是中国人的主食，象征着日常生活的充实与温暖。特别是在家庭聚餐中，饭是象征家庭团圆与幸福的重要部分。Rice/Meal在英语中指的是食物或米饭，虽然与中国文化中饭的意义相似，但没有深层的象征意义。Aduane在Twi中是食物的意思，通常指代饭类，文化上与中国的饭有类似的实用功能，但缺乏中国文化中的象征背景。",
+    category: "冲突",
+    level: "一级"
+  },
+  {
+    id: 6,
+    chinese: "哥哥",
+    english: "Older brother",
+    twi: "Nuabarima",
+    culturalContent: "哥哥在中国文化中象征着长兄如父的责任和权威，尤其在传统的家庭中，哥哥通常扮演着保护和照顾弟弟妹妹的角色。Older brother在英语中同样指家庭中年纪较大的男性成员，但没有中国文化中赋予哥哥的责任感与权威性。Nuabarima在Twi中指哥哥，强调亲兄弟关系，但文化背景较为简单，缺少中国文化中的长兄责任。",
+    category: "冲突",
+    level: "一级"
+  },
+  {
+    id: 7,
+    chinese: "姐姐",
+    english: "Older sister",
+    twi: "Nua mmea",
+    culturalContent: "姐姐在中国文化中象征着关爱、责任和照顾，特别是姐姐在传统家庭中承担着照顾弟弟妹妹的职责。Older sister在英语中指年长的女性成员，但较少具有中国文化中赋予姐姐的责任感和象征意义。Nua mmea在Twi中是姐姐的意思，侧重于家庭角色，但缺少中国文化中长姐如母的传统象征。",
+    category: "冲突",
+    level: "一级"
+  },
+  {
+    id: 8,
+    chinese: "妹妹",
+    english: "Younger sister",
+    twi: "Nua mma",
+    culturalContent: "妹妹在中国文化中代表着家庭中的亲密和宠爱，妹妹通常是家庭的娇嫩成员，受到照顾和保护。Younger sister在英语中指较小的女性家庭成员，但缺乏中国文化中妹妹的象征意义。Nua mma在Twi中指妹妹，文化上强调亲属关系，缺乏中国文化中妹妹的特别象征性。",
+    category: "冲突",
+    level: "一级"
+  },
+  {
+    id: 9,
+    chinese: "面条",
+    english: "Noodles",
+    twi: "Nkwan",
+    culturalContent: "面条在中国文化中是食物的象征，尤其在节庆和日常饮食中，面条代表着长寿和健康。Noodles在英语中指代所有类型的面条，没有中国文化中对面条的深层次象征意义。Nkwan在Twi中指面条，文化上侧重于食物的实际用途，没有中国文化中的象征意义。",
+    category: "冲突",
+    level: "一级"
+  },
+  {
+    id: 10,
+    chinese: "小姐",
+    english: "Miss",
+    twi: "Afia",
+    culturalContent: "小姐在中国文化中是对年轻女性的尊称，通常具有一定的礼貌和尊敬意义，尤其是在正式场合。Miss在英语中也是对未婚女性的称呼，但通常不具备中国文化中的礼仪和尊重意义。Afia在Twi中是未婚女性的称呼，文化上更注重亲属关系和社交礼仪，但不如中文中有象征性和尊敬的意味。",
+    category: "冲突",
+    level: "一级"
+  }
+];
